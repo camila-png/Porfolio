@@ -1,0 +1,98 @@
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon-10.png" type="image/png">
+  <title>Trabajos - Camila Gerez</title>
+</head>
+
+
+<body class="pagina-trabajos">
+
+  <header>
+  <img src="img/logo-porfolio-09.svg" alt="Logo Camila" class="logo" />
+  <nav>
+    <ul>
+      <li><a href="index.html">Sobre mí</a></li>
+      <li><a href="trabajos.html">Trabajos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  </header>
+<main>
+  <h1 class="titulo-principal">Mis trabajos</h1>
+  <section class="galeria-trabajos">
+  <a href="#foto-1" onclick="mostrarGaleria()">
+    <img src="img/promo-uno.jpg" alt="Trabajo 1">
+  </a>
+  <a href="#foto-2" onclick="mostrarGaleria()">
+    <img src="img/batman.jpg" alt="Trabajo 2">
+  </a>
+  <a href="#foto-3" onclick="mostrarGaleria()">
+    <img src="img/saoko.jpg" alt="Trabajo 3">
+  </a>
+  <a href="#foto-4" onclick="mostrarGaleria()">
+    <img src="img/landscape-trabajo.png" alt="Trabajo 4">
+  </a>
+  <a href="#foto-5" onclick="mostrarGaleria()">
+    <img src="img/cacho.jpg" alt="Trabajo 5">
+  </a>
+  <a href="#foto-6" onclick="mostrarGaleria()">
+    <img src="img/al-centro.jpg" alt="Trabajo 6">
+  </a>
+</section>
+
+<section id="galeria" class="galeria-oculta">
+  <ul>
+    <li class="fraccion-galeria" id="foto-1">
+      <img src="img/promo-trabajo.jpg" alt="Trabajo 1 grande">
+      <h2>Promoción Fotográfica</h2>
+      <p>Elegimos un objeto de uso hogareño y realizamos algunas fotografías promocionales</p>
+      <button onclick="ocultarGaleria()">Cerrar</button>
+    </li>
+    <li class="fraccion-galeria" id="foto-2">
+      <img src="img/batman-trabajo.jpg" alt="Trabajo 2 grande">
+      <h2>Portada Batman</h2>
+      <p>Este proyecto implicó conceptualizar, fotografiar y diseñar una portada que capturara la esencia de la película</p>
+      <button onclick="ocultarGaleria()">Cerrar</button>
+    </li>
+    <li class="fraccion-galeria" id="foto-3">
+      <img src="img/saoko-trabajo.jpg" alt="Trabajo 3 grande">
+      <h2>Album de Rosalia</h2>
+      <p>Diseñar la portada y contraportada de un álbum musical</p>
+      <button onclick="ocultarGaleria()">Cerrar</button>
+    </li>
+    <li class="fraccion-galeria" id="foto-4">
+      <img src="img/landscape.png" alt="Trabajo 4 grande">
+      <h2>Landscape</h2>
+      <p>Desarrollamos un sistema gráfico basado en imágenes, en mi caso, utilicé fotografías de la naturaleza como punto de partida</p>
+      <button onclick="ocultarGaleria()">Cerrar</button>
+    </li>
+    <li class="fraccion-galeria" id="foto-5">
+      <img src="img/cacho-trabajo.jpg" alt="Trabajo 5 grande">
+      <h2>Festival de cine Cacho de Cultura</h2>
+      <p>En este trabajo, realizado durante la cursada de Taller de Diseño II, desarrollamos en grupo un sistema de piezas de diseño para promocionar un festival de cine ficticio</p>
+      <button onclick="ocultarGaleria()">Cerrar</button>
+    </li>
+    <li class="fraccion-galeria" id="foto-6">
+      <img src="img/al-centro-trabajo.jpg" alt="Trabajo 6 grande">
+      <h2>Afiche al centro de la tierra</h2>
+      <p>Este trabajo fue parte del curso de Taller de Diseño II, se nos asignó una película para diseñar su afiche</p>
+      <button onclick="ocultarGaleria()">Cerrar</button>
+    </li>
+  </ul>
+</section>
+
+</main>
+  
+  <script>
+  function mostrarGaleria() {
+    document.getElementById("galeria").style.display = "flex";
+  }
+
+  function ocultarGaleria() {
+    document.getElementById("galeria").style.display = "none";
+    window.location.hash = "";
+  }
+</script>
+</body>

@@ -1,0 +1,49 @@
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon-10.png" type="image/png">
+  <title>Contacto - Camila Gerez</title>
+</head>
+
+<body class="pagina-contacto">
+
+  <header>
+  <img src="img/logo-porfolio-09.svg" alt="Logo Camila" class="logo" />
+  <nav>
+    <ul>
+      <li><a href="index.html">Sobre mí</a></li>
+      <li><a href="trabajos.html">Trabajos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main class="contacto-main">
+  <section class="texto-contacto">
+    <h1 class="titulo-contacto">Contactáme</h1>
+    <p class="subtitulo-contacto">Completá el siguiente formulario con tus datos para ponerte en contacto conmigo</p>
+  </section>
+
+  <section class="formulario-contenedor">
+    <form class="formulario" action="mailto:tuemail@ejemplo.com" method="POST" enctype="text/plain">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="redes">
+      <p>Mis redes</p>
+      <div class="icono"><img src="img/wpp-logo.png" alt="wpp"></div>
+      <div class="icono"><img src="img/instagram-logo.png" alt="instagram"></div>
+    </div>
+  </section>
+  </main>
+</body>
