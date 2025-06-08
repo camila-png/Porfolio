@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@400;700&family=Unbounded:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
 
 * {
   margin: 0;
@@ -7,13 +9,17 @@
   box-sizing: border-box;
 }
 
-body {
+ body {
   font-family: 'Unbounded', sans-serif;
+  background-image: url('img/inicio-fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Header */
 header {
-  background-color: #E2AACE; /* rosa */
+  background-color: #E2AACE; 
   width: 100%;
   height: 65px;
   display: flex;
@@ -39,14 +45,13 @@ nav ul li a {
   font-size: 20px;
   background-color: #824F92; 
   color: #FAD6EB; 
-  width: 209px;
-  height: 74px;
-  display: flex;
+  padding: 20px 30px;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
 }
+ 
 
 nav ul li a:hover {
   background-color: #6f3e7a; 
@@ -56,7 +61,7 @@ nav ul li a:hover {
     position: relative;
     height: 100vh;
     background-color: #360046;
-    background-image: url('img/portada.png');
+    background-image: url('img/portadaindex-01.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
@@ -71,8 +76,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 150px;
     left: 900px; 
-    text-align: left;
-  }
+}
 
 .año {
   font-size: 50px;
@@ -85,4 +89,406 @@ nav ul li a:hover {
   font-size: 35px;
   color: #FAD6EB;
   font-weight: 400;
+}
+.presentacion {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+/* foto */
+.foto-cami {
+  position: relative;
+  width: 260px;
+  height: 350px;
+}
+
+.foto-cami img {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* datos */
+.dato {
+  position: absolute;
+  background-color: #824F92;
+  color: #EBA8DB;
+  font-family: 'Unbounded', sans-serif;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Posiciones de cada uno */
+.fecha {
+  top: 10%;
+  left: -60px;
+}
+
+.signo {
+  top: 40%;
+  left: -40px;
+}
+
+.edad {
+  right: -60px;
+}
+
+/* texto a la derecha */
+.texto-presentacion {
+  max-width: 400px;
+  color: #360046;
+}
+
+.texto-presentacion h1 {
+  font-family: 'Fascinate Inline';
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.texto-presentacion p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+.experiencia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.experiencia-columna {
+  flex: 1 1 45%;
+  font-family: 'Quicksand', sans-serif;
+  color: #360046;
+}
+
+.experiencia h2 {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 40px;
+  margin-top: 20px ;
+}
+
+.año-exp{
+  background-color: #824F92;
+  color: #EBA8DB;
+  font-family: 'Unbounded', sans-serif; 
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100px;
+  height: 40px
+}
+
+.item-exp {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.habilidades span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #824F92;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.intereses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+}
+
+.intereses li {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.intereses img {
+  width: 128px;
+  height: 119px;
+  margin-bottom: 10px;
+}
+
+/* PAGINA TRABAJOS */
+.pagina-trabajos {
+  background-image: url('img/trabajos-fondo.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titulo-principal {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 48px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  color: #EBA8DB;
+  text-align: center;
+}
+
+/* Miniaturas clickeables */
+.galeria-trabajos {
+  display: grid;
+  grid-template-columns: repeat(3, auto); 
+  column-gap: 20px;                       
+  row-gap: 30px;                          
+  justify-content: center;               
+  padding: 40px 0;                        
+}
+
+.galeria-trabajos a img {
+  width: 250px;                           
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria-trabajos a img:hover {
+  transform: scale(1.05);
+}
+
+/* Galería oculta grande */
+.galeria-oculta {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.galeria-oculta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fraccion-galeria {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.fraccion-galeria:target {
+  display: flex;
+}
+
+.fraccion-galeria img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.fraccion-galeria p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.fraccion-galeria button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #EBA8DB;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fraccion-galeria button:hover {
+  background-color: #d98cc2;
+}
+
+/* PAGINA CONTACTO */
+
+.pagina-contacto {
+  background-image: url('img/contacto-fondo.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titulo-contacto {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #EBA8DB;
+
+}
+
+.subtitulo-contacto {
+  margin-bottom: 40px;
+  font-size: 16px;
+  max-width: 400px;
+  color: #EBA8DB;
+}
+
+.formulario-contenedor {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.formulario {
+  background-color: #e8aac9;
+  padding: 40px 30px;
+  border-radius: 4px;
+  width: 600px;
+  color: #360046;
+}
+
+.contacto-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #360046;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #360046;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  background-color: #824F92;
+  color: #FAD6EB;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.redes {
+  background-color: #824F92;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+}
+
+.redes p {
+  margin-bottom: 10px;
+}
+
+.redes .icono {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #d3d3d3;
+  margin: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .presentacion {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .foto-cami {
+    width: 200px;
+    height: 270px;
+  }
+
+  .texto-presentacion h1 {
+    font-size: 40px;
+  }
+
+  .experiencia {
+    padding: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formulario-contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formulario,
+  .redes {
+    width: 100%;
+  }
+
+  .info-abajo-derecha {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .texto {
+    flex-direction: column;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
 }
