@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@400;700&family=Unbounded:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -15,6 +15,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh
 }
 
 /* Header */
@@ -197,7 +198,6 @@ nav ul li a:hover {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #824F92;
   margin-right: 10px;
   border-radius: 4px;
 }
@@ -222,7 +222,6 @@ nav ul li a:hover {
 .intereses img {
   width: 128px;
   height: 119px;
-  margin-bottom: 10px;
 }
 
 /* PAGINA TRABAJOS */
@@ -263,6 +262,7 @@ nav ul li a:hover {
 
 .galeria-trabajos a img:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 /* Galería oculta grande */
@@ -310,8 +310,9 @@ nav ul li a:hover {
 
 .fraccion-galeria p {
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: 18px;
   max-width: 600px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .fraccion-galeria button {
@@ -329,8 +330,8 @@ nav ul li a:hover {
   background-color: #d98cc2;
 }
 
-/* PAGINA CONTACTO */
 
+/* PAGINA CONTACTO */
 .pagina-contacto {
   background-image: url('img/contacto-fondo.png'); 
   background-size: cover;
@@ -373,8 +374,9 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 40px 20px 200px;
 }
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -429,6 +431,20 @@ button {
   margin: 5px;
 }
 
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; 
+  background-color: #E2AACE;
+}
+
+footer .logo {
+  height: 60px;
+  max-height: 100%;
+}
 
 @media screen and (max-width: 768px) {
   header {

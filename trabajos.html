@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,9 +42,9 @@
   <a href="#foto-6" onclick="mostrarGaleria()">
     <img src="img/al-centro.jpg" alt="Trabajo 6">
   </a>
-</section>
+  </section>
 
-<section id="galeria" class="galeria-oculta">
+  <section id="galeria" class="galeria-oculta">
   <ul>
     <li class="fraccion-galeria" id="foto-1">
       <img src="img/promo-trabajo.jpg" alt="Trabajo 1 grande">
@@ -81,11 +83,14 @@
       <button onclick="ocultarGaleria()">Cerrar</button>
     </li>
   </ul>
-</section>
-
+  </section>
 </main>
-  
-  <script>
+
+<footer>
+  <img src="img/logo-porfolio-09.svg" alt="Logo Camila" class="logo" />
+</footer>
+
+<script>
   function mostrarGaleria() {
     document.getElementById("galeria").style.display = "flex";
   }
@@ -95,4 +100,9 @@
     window.location.hash = "";
   }
 </script>
+
 </body>
+</html>
+
+
+
