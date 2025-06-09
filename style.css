@@ -73,21 +73,35 @@ nav ul li a:hover {
     padding: 40px;
   }
 
+/* Mini animacion de palabras */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .info-abajo-derecha {
-    position: absolute;
-    bottom: 150px;
-    left: 900px; 
+  position: absolute;
+  bottom: 150px;
+  left: 900px;
+  opacity: 0; 
+  animation: fadeSlideIn 1.5s ease forwards;
 }
 
 .año {
-  font-size: 50px;
+  font-size: 60px;
   color: #b888c4;
   font-weight: 400;
   font-family: 'Ojuju', sans-serif;
 }
 
 .nombre {
-  font-size: 35px;
+  font-size: 50px;
   color: #FAD6EB;
   font-weight: 400;
 }
@@ -154,6 +168,7 @@ nav ul li a:hover {
 .texto-presentacion p {
   margin-bottom: 15px;
   font-size: 16px;
+  font-weight:bold;
   font-family: 'Quicksand', sans-serif;
 }
 .experiencia {
@@ -192,6 +207,7 @@ nav ul li a:hover {
 .item-exp {
   font-size: 16px;
   margin-bottom: 20px;
+  font-weight:bold;
 }
 
 .habilidades span {
@@ -217,6 +233,7 @@ nav ul li a:hover {
   gap: 10px; 
   text-align: left;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .intereses img {
@@ -500,7 +517,7 @@ footer .logo {
     width: 100%;
   }
 
-  /* FOOTER (si lo tenés) */
+  /* FOOTER solo del index*/
   footer {
     flex-direction: column;
     text-align: center;
