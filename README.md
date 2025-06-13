@@ -9,3 +9,6 @@ Alto: 911px
 
 Editor de código utilizado:
 Visual Studio Code (VS Code)
+
+Link a Figma:
+ https://www.figma.com/design/JPPGIUiiCOF9C5jPre4GUb/Porfolio-Camila-Gerez?node-id=1-2&t=1efssbs0v7XXvf5K-1
