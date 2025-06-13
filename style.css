@@ -20,7 +20,7 @@
 
 /* Header */
 header {
-  background-color: #E2AACE; 
+  background-color: #E1A7CC;
   width: 100%;
   height: 65px;
   display: flex;
@@ -29,10 +29,22 @@ header {
   padding: 0 40px;
 }
 
-/* Logo */
+/* Logo con animación */
 .logo {
   height: 60px;
   margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  animation: saltito 0.5s ease;
+}
+
+@keyframes saltito {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-15px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
 }
 /* Menú de navegación */
 nav ul {
@@ -45,7 +57,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   background-color: #824F92; 
-  color: #FAD6EB; 
+  color: #E1A7CC;
   padding: 20px 30px;
   display: inline-block;
   align-items: center;
@@ -66,7 +78,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
-    color: #FAD6EB;
+    color: #E1A7CC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,14 +107,14 @@ nav ul li a:hover {
 
 .año {
   font-size: 60px;
-  color: #b888c4;
+  color: #E1A7CC;
   font-weight: 400;
   font-family: 'Ojuju', sans-serif;
 }
 
 .nombre {
   font-size: 50px;
-  color: #FAD6EB;
+  color: #E1A7CC;
   font-weight: 400;
 }
 .presentacion {
@@ -130,7 +142,7 @@ nav ul li a:hover {
 .dato {
   position: absolute;
   background-color: #824F92;
-  color: #EBA8DB;
+  color: #E1A7CC;
   font-family: 'Unbounded', sans-serif;
   padding: 8px 16px;
   border-radius: 8px;
@@ -195,8 +207,10 @@ nav ul li a:hover {
 
 .año-exp{
   background-color: #824F92;
-  color: #EBA8DB;
+  color: #E1A7CC;
   font-family: 'Unbounded', sans-serif; 
+  text-align: center;
+  font-weight: lighter;
   padding: 10px 20px;
   border-radius: 8px;
   font-size: 16px;
@@ -218,6 +232,28 @@ nav ul li a:hover {
   border-radius: 4px;
 }
 
+.idiomas {
+  font-family: 'Quicksand', sans-serif;
+  color: #360046;
+  margin-top: 40px;
+}
+
+.idiomas h2 {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.idiomas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.idiomas li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
 .intereses {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -254,7 +290,7 @@ nav ul li a:hover {
   font-size: 48px;
   margin-bottom: 10px;
   margin-top: 40px;
-  color: #EBA8DB;
+  color: #E1A7CC;
   text-align: center;
 }
 
@@ -319,14 +355,24 @@ nav ul li a:hover {
   display: flex;
 }
 
+
+.fraccion-galeria h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+  color: #fff;
+  font-family: 'Unbounded', sans-serif;
+}
+
 .fraccion-galeria img {
   max-width: 90%;
   max-height: 80vh;
   border-radius: 10px;
+  margin-bottom: 16px;
 }
 
 .fraccion-galeria p {
-  margin-top: 20px;
+  margin-top: 0; 
   font-size: 18px;
   max-width: 600px;
   font-family: 'Quicksand', sans-serif;
@@ -335,7 +381,7 @@ nav ul li a:hover {
 .fraccion-galeria button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #EBA8DB;
+  background-color:#E1A7CC;
   border: none;
   color: #000;
   font-weight: bold;
@@ -344,9 +390,23 @@ nav ul li a:hover {
 }
 
 .fraccion-galeria button:hover {
-  background-color: #d98cc2;
+  background-color: #c58db0;
 }
 
+.imagenes-dobles {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.imagenes-dobles img {
+  max-width: 45%;
+  max-height: 60vh;
+  border-radius: 10px;
+  object-fit: contain;
+}
 
 /* PAGINA CONTACTO */
 .pagina-contacto {
@@ -360,7 +420,8 @@ nav ul li a:hover {
   font-family: 'Fascinate Inline', cursive;
   font-size: 48px;
   margin-bottom: 10px;
-  color: #EBA8DB;
+  color: #E1A7CC;
+  text-align: center;
 
 }
 
@@ -368,7 +429,8 @@ nav ul li a:hover {
   margin-bottom: 40px;
   font-size: 16px;
   max-width: 400px;
-  color: #EBA8DB;
+  color: #E1A7CC;
+  text-align: center;
 }
 
 .formulario-contenedor {
@@ -379,7 +441,7 @@ nav ul li a:hover {
 }
 
 .formulario {
-  background-color: #e8aac9;
+  background-color: #E1A7CC;
   padding: 40px 30px;
   border-radius: 4px;
   width: 600px;
@@ -391,7 +453,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 40px 20px 200px;
+  padding: 80px 20px 200px;
 }
 
 label {
@@ -419,13 +481,12 @@ textarea {
 }
 
 button {
-  background-color: #824F92;
-  color: #FAD6EB;
-  border: none;
+  background-color: #360046;
+  color: #E1A7CC;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Quicksand', sans-serif;
+  font-family:'Unbounded', sans-serif;
 }
 
 .redes {
@@ -448,20 +509,53 @@ button {
   margin: 5px;
 }
 
+input[type="tel"],
+select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #360046;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #360046;
+  font-family: 'Quicksand', sans-serif;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
 
 /* FOOTER */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px; 
   background-color: #E2AACE;
+  padding: 10px 0;
+  color: #360046;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 12px;
 }
 
-footer .logo {
-  height: 60px;
-  max-height: 100%;
+.footer-contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
 }
+
+.footer-texto {
+  line-height: 1.4;
+}
+
+
 
 @media screen and (max-width: 600px) {
   /* HEADER */

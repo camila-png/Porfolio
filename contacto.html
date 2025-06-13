@@ -11,7 +11,9 @@
 <body class="pagina-contacto">
 
   <header>
-  <img src="img/logo-porfolio-09.svg" alt="Logo Camila" class="logo" />
+  <a href="index.html">
+    <img src="img/logo-porfolio-09.svg" width="60px" height="60px" alt="Logo Camila" class="logo" />
+  </a>
   <nav>
     <ul>
       <li><a href="index.html">Sobre mí</a></li>
@@ -35,22 +37,43 @@
       <label for="email">Mail</label>
       <input type="email" id="email" name="email" required>
 
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]+" required>
+
+      <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo" required>
+          <option value="">Seleccioná una opción</option>
+          <option value="consulta">Consulta</option>
+          <option value="presupuesto">Presupuesto</option>
+          <option value="colaboracion">Colaboración</option>
+          <option value="otro">Otro</option>
+        </select>
+
       <label for="mensaje">Mensaje</label>
       <textarea id="mensaje" name="mensaje" required></textarea>
 
       <button type="submit">Enviar</button>
     </form>
 
-    <div class="redes">
-      <p>Mis redes</p>
-      <div class="icono"><img src="img/wpp-logo.png" alt="wpp"></div>
-      <div class="icono"><img src="img/instagram-logo.png" alt="instagram"></div>
-    </div>
+<div class="redes">
+  <p>Mis redes</p>
+  <a href="https://wa.me/116987828" target="_blank" class="icono">
+    <img src="img/wpp-logo.png" width="40px" height="40px" alt="WhatsApp">
+  </a>
+  <a href="https://instagram.com/cami.gerez_" target="_blank" class="icono">
+    <img src="img/instagram-logo.png" width="40px" height="40px" alt="Instagram">
+  </a>
+</div>
   </section>
 </main>
 
 <footer>
-  <img src="img/logo-porfolio-09.svg" alt="Logo Camila" class="logo" />
+  <div class="footer-contenedor">
+    <p class="footer-texto">
+      Derechos reservados. Copyright © 2025 Gerez Camila.<br>
+      Buenos Aires, Argentina.
+    </p>
+  </div>
 </footer>
 
 </body>
